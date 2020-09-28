@@ -1,0 +1,74 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+body nav {
+  display: block;
+  width: 200px;
+}
+
+body nav ul {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  background: #ccc;
+  top: 0;
+  left: 0;
+}
+
+body nav ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 0.5rem;
+}
+
+body nav ul li.active {
+  background: #ffae00;
+}
+
+body nav ul li.active a {
+  color: white;
+}
+
+body nav ul li a {
+  color: #222;
+  text-decoration: none;
+  text-align: center;
+}
+
+body main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-left: 200px;
+  padding: 0.5rem;
+}
+
+body main section {
+  padding: 1rem;
+  background: #eee;
+  line-height: 28px;
+  -webkit-box-shadow: 0 3px 7px #222;
+          box-shadow: 0 3px 7px #222;
+  margin-bottom: 0.5rem;
+}
+
+body main section h1 {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

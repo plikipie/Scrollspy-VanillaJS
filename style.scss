@@ -1,0 +1,62 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    @mixin mp-0 {
+        margin: 0;
+        padding: 0;
+    }
+    @include mp-0;
+    nav {
+        $w: 200px;
+        display: block;
+        $h: 100vh;
+        width: $w;
+        ul {
+            @include mp-0;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: fixed;
+            width: $w;
+            height: $h;
+            background: #ccc;
+            top: 0;
+            left: 0;
+            li {
+                transition: 0.3s;
+                padding: 0.5rem;
+                &.active {
+                    background: rgb(255, 174, 0);
+                    a {
+                        color: white;
+                    }
+                }
+                a {
+                    color: #222;
+                    text-decoration: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    main {
+        width: 100%;
+        @include mp-0;
+        margin-left: 200px;
+        padding: 0.5rem;
+        section {
+            padding: 1rem;
+            background: #eee;
+            line-height: 28px;
+            box-shadow: 0 3px 7px #222;
+            margin-bottom: 0.5rem;
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+}
